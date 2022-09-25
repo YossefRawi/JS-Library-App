@@ -95,7 +95,8 @@ gap: 0.5rem;
 font-size: 1.5rem ;
 border-radius: 5px;
 }
-form>input[type="text"]{
+form>input[type="text"],
+form>input[type="number"]{
     text-decoration: none;
     outline: none;
 }
@@ -104,6 +105,29 @@ form>button{
     width: 50%;
     place-self: end center;
 }
+
+form>input[type="text"]:valid,
+form>input[type="number"]:valid{
+    border: 1px solid green;
+}
+
+form>input[type="text"]:invalid,
+form>input[type="number"]:invalid{
+    border: 1px solid red;
+}
+
+
+.deleteBtn{
+    margin-bottom: 1rem;
+    width: 10%;
+    height: 5vh;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+
+
 
 #overlay{
     position: fixed;
